@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Driver Details</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<script>
+  const status = localStorage.getItem("verificationStatus");
+
+  const statusText = document.getElementById("statusText");
+
+  if (status === "VERIFIED") {
+    statusText.innerText = "Verified";
+    statusText.style.color = "green";
+  } else {
+    statusText.innerText = "Not Verified";
+    statusText.style.color = "red";
+  }
+</script>
+<body>
+  <div class="box">
+    <h2>Driver Details</h2>
+    <p><b>Name:</b> Ramesh</p>
+    <p><b>Vehicle Number:</b> AP 09 AB 1234</p>
+    <p><b>Status:</b> <span class="success">Verified</span></p>
+
+    <h3>Rating</h3>
+    ⭐ ⭐ ⭐ ⭐ ☆
+
+    <br><br>
+    <button onclick="goToAlert()">Alert System</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

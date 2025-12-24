@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alert System</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <div class="box">
+    <h2>Emergency Alert</h2>
+    <button onclick="startVoiceDetection()"> Say Emergency</button>
+
+    <button onclick="voiceAlert()">🔊 Voice Alert</button><br><br>
+    
+    <button onclick="sendAlert()">📩 Send Alert</button>
+
+    <p id="alertMsg"></p>
+    <div id="locationBox">
+      <p><strong>Live Location:</strong></p>
+      <p id="coords">Not fetched</p>
+      <a id="mapLink" href="#" target="_blank"></a>
+    </div>
+  </div>
+
+  <script src="alert.js"></script>
+</body>
+</html>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
